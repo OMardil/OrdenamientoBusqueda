@@ -5,25 +5,7 @@
  */
 package staticmethodsdemo;
 
-/**
- *
- * @author Omar
- */
 public class StaticMethodsDemo {
-
-    public static void main(String[] args) {
-        
-        double[] a = {2.0, 5.0, 10.0, -1.0 };
-        double output = StaticMethodsDemo.calculateAverage(a);
-        System.out.println("1.- " + output);
-        
-        output = StaticMethodsDemo.calculateAverage(10.0, 8.0);
-        System.out.println("2.- " + output);
-        
-        output = StaticMethodsDemo.calculateAverage(10.0, 8.0, 6.0);
-        System.out.println("3.- " + output);        
-        
-    }
     
     public static double calculateAverage(double[] a) {
         
@@ -50,5 +32,19 @@ public class StaticMethodsDemo {
                                           double num3) {
         return (num1 + num2 + num3) / 3.0;
     }
+    
+    public static void main(String[] args) {
+        
+        double[] a = {2.0, 5.0, 10.0, -1.0 };
+        double output = StaticMethodsDemo.calculateAverage(a);
+        System.out.println("1.- " + output);
+        
+        output = StaticMethodsDemo.calculateAverage(10.0, 8.0);
+        System.out.println("2.- " + output);
+        
+        output = StaticMethodsDemo.calculateAverage(10.0, 8.0, 6.0);
+        System.out.println("3.- " + output);        
+        
+    }    
        
 }
