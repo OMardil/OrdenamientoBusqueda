@@ -11,11 +11,35 @@ package staticmethodsdemo;
  */
 public class StaticMethodsDemo {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        double[] a = {2.0, 5.0, 10.0, -1.0 };
+        double output = StaticMethodsDemo.calculateAverage(a);
+        System.out.println(output);
+        
     }
     
+    public static double calculateAverage(double[] a) {
+        
+        double sum = 0;
+        
+        if (a.length == 0){
+            System.exit(0);
+        }
+            
+        for(int i = 0; i<a.length; i++){
+            sum += a[i];
+        }
+        
+        return sum / a.length;
+    }
+    
+    
+    public static double calculateAverage(double num1, double num2) {
+        return (num1 + num2) / 2.0;
+    }
+    
+    public static double calculateAverage(double num1, double num2, double num3) {
+        return (num1 + num2 + num3) / 3.0;
+    }
+       
 }
