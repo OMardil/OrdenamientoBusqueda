@@ -15,13 +15,13 @@ public class StaticMethodsDemo {
         
         double[] a = {2.0, 5.0, 10.0, -1.0 };
         double output = StaticMethodsDemo.calculateAverage(a);
-        System.out.println(output);
+        System.out.println("1.- " + output);
         
         output = StaticMethodsDemo.calculateAverage(10.0, 8.0);
-        System.out.println(output);
+        System.out.println("2.- " + output);
         
         output = StaticMethodsDemo.calculateAverage(10.0, 8.0, 6.0);
-        System.out.println(output);        
+        System.out.println("3.- " + output);        
         
     }
     
