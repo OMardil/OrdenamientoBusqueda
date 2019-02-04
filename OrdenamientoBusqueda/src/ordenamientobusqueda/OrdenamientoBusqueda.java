@@ -19,6 +19,9 @@ public class OrdenamientoBusqueda {
     }
 
     public static int findElementv2(int[] array, int key) {
+        
+        if (array.length == 0)
+            return -1;
 
         for (int index1 = 0, index2 = array.length - 1;
                 index1 < (array.length / 2) + 1;
@@ -36,13 +39,29 @@ public class OrdenamientoBusqueda {
         return -1;
 
     }
+    
+    public static int[] findElementv3(int[] array, int key) {
+        
+        int count = 0;
+        int[] matchArray;
+        
+        for (int i = 0; i < array.length; i++){
+            if (array[i] == key ){
+                count++;
+            }
+        }
+        
+        matchArray = new int[count];
+        int matchArrayIndex = 0;
+        
+        for (int i = 0; i < array.length; i++) {
+            if (key == array[i]) {
+                matchArray[matchArrayIndex++] = i;
+            }
+        }
 
-    public static void main(String[] args) {
-        int a = findElement(new int[]{7, 3, 6, 8, 11, 15, 2, 1}, 15);
-        System.out.println(a);
-        int b = findElementv2(new int[]{7, 3, 6, 8, 11, 15, 2, 1}, 15);
-        System.out.println(b);
+        return matchArray;
 
-    }
+    }    
 
 }
