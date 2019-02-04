@@ -27,8 +27,6 @@ public class OrdenamientoBusquedaDemo {
         pruebaCaso(11, new int[]{2, 1}, 1, new int[]{1});
         pruebaCaso(12, new int[]{}, 1, new int[]{});    
     
-    
-    
     }
 
     public static void pruebaCaso(int testNum, int[] array, int buscar, int respuesta) {
