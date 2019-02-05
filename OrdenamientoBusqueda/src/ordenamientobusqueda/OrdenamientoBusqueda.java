@@ -1,7 +1,6 @@
 package ordenamientobusqueda;
 
 /**
- *
  * @author Omar
  */
 public class OrdenamientoBusqueda {
